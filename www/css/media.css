@@ -1,0 +1,185 @@
+    /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+    /* configurações válidas para um largura de até 480px */
+    @media (max-width:480px) {
+        .container {
+            width: 97vw;
+        }
+
+        header {
+            font-size: 2rem;
+        }
+
+        table {
+            width: 99%;
+        }
+
+        input {
+            width: 18px;
+            height: 19px;
+            font-size: 0.7em;
+        }
+
+        button {
+            width: 18px;
+            height: 20px;
+            font-size: 0.5em;
+        }
+
+        .Casanula {
+            width: 18px;
+            height: 19px;
+        }
+
+        .botao-jogo {
+            /*BOTÃO DICA*/
+            position: relative;
+            margin-left: -75px;
+            left: 50%;
+            width: 150px;
+            height: 50px;
+            font-size: 25px;
+
+        }
+
+        h3 {
+            font-size: 1em;
+        }
+
+        #texto {
+            font-size: 0.8em;
+            padding-top: 0;
+        }
+
+        #Marcatempo {
+            width: 75px;
+            height: 55px;
+            border-radius: 10px;
+            border: outset 3px black;
+            text-align: center;
+        }
+
+        #tempo {
+            width: 50px;
+            height: 32px;
+            border-radius: 6px;
+            border: solid 3px;
+        }
+
+        #cronometro {
+            font-size: 24px;
+        }
+
+        #pontuacao {
+            width: 50px;
+            height: 32px;
+            border-radius: 6px;
+            border: solid 3px;
+        }
+
+        #Marcapontuacao {
+            width: 75px;
+            height: 55px;
+            text-align: center;
+            border-radius: 10px;
+            border: outset 3px black;
+        }
+
+        .casa-selecionada {
+            transform: scale(1.5);
+        }
+    }
+
+    /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+    /* configurações válidas para um largura de até 360px */
+    @media (max-width:360px) {
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100vw;
+        }
+
+        header {
+            font-size: 2rem;
+        }
+
+        table {
+            width: 100vw;
+        }
+
+        input {
+            width: 15px;
+            height: 17px;
+            font-size: 0.7em;
+        }
+
+        button {
+            width: 16px;
+            height: 17px;
+            font-size: 0.5em;
+        }
+
+        .Casanula {
+            width: 15px;
+            height: 17px;
+        }
+
+        .botao-jogo {
+            /*BOTÃO DICA*/
+            position: relative;
+            margin-left: -75px;
+            left: 50%;
+            width: 150px;
+            height: 50px;
+            font-size: 25px;
+        }
+
+        h3 {
+            font-size: 1em;
+        }
+
+        #texto {
+            font-size: 0.8em;
+            padding-top: 0;
+        }
+
+        #Marcatempo {
+            width: 75px;
+            height: 55px;
+            border-radius: 10px;
+            border: outset 3px black;
+            text-align: center;
+        }
+
+        #tempo {
+            width: 50px;
+            height: 32px;
+            border-radius: 6px;
+            border: solid 3px;
+        }
+
+        #cronometro {
+            font-size: 24px;
+        }
+
+        #pontuacao {
+            width: 50px;
+            height: 32px;
+            border-radius: 6px;
+            border: solid 3px;
+        }
+
+        #Marcapontuacao {
+            width: 75px;
+            height: 55px;
+            text-align: center;
+            border-radius: 10px;
+            border: outset 3px black;
+        }
+
+        .casa-selecionada {
+            transform: scale(1.5);
+        }
+    }

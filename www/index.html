@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/media.css">
+<title>PALAVRA CRUZADA - O DEBATE</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            PALAVRA CRUZADA
+        </header>
+        <div id="jogo-em-andamento">
+            <div id="pergunta-da-vez" class="boxpergunta">Pergunta:</div>
+            <table>
+                <tr>
+                    <!-- 1ª LINHA -->
+                    <td>
+                        <button id="botao-pergunta1" type="button">1&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="1B"></td>
+                    <td><input type="text" maxlength="1" id="1C"></td>
+                    <td><input type="text" maxlength="1" id="1D"></td>
+                    <td><input type="text" maxlength="1" id="1E"></td>
+                    <td><input type="text" maxlength="1" id="1F"></td>
+                    <td><input type="text" maxlength="1" id="1G"></td>
+                    <td><input type="text" maxlength="1" id="1H"></td>
+                    <td><input type="text" maxlength="1" id="1I"></td>
+                    <td>
+                        <button id="botao-pergunta2" type="button">2&#8711;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="1K"></td>
+                    <td>
+                        <button id="botao-pergunta3" type="button">3&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="1M"></td>
+                    <td><input type="text" maxlength="1" id="1N"></td>
+                    <td><input type="text" maxlength="1" id="1O"></td>
+                    <td><input type="text" maxlength="1" id="1P"></td>
+                    <td><input type="text" maxlength="1" id="1Q"></td>
+                    <td><input type="text" maxlength="1" id="1R"></td>
+                </tr>
+                <!-- 2ª LINHA -->
+                <tr>
+                    <td>
+                        <button id="botao-pergunta4" type="button">4&#8711;</button>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta5" type="button">5&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="2C"></td>
+                    <td><input type="text" maxlength="1" id="2D"></td>
+                    <td><input type="text" maxlength="1" id="2E"></td>
+                    <td><input type="text" maxlength="1" id="2F"></td>
+                    <td><input type="text" maxlength="1" id="2G"></td>
+                    <td><input type="text" maxlength="1" id="2H"></td>
+                    <td>
+                        <button id="botao-pergunta6" type="button">6&#8711;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="2J"></td>
+                    <td><input type="text" maxlength="1" id="2K"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta7" type="button">7&#8711;</button>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta8" type="button">8&#8711;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="2P"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                </tr>
+
+                <!-- 3ª LINHA -->
+                <tr>
+                    <td><input type="text" maxlength="1" id="3A"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta9" type="button">9&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="3D"></td>
+                    <td><input type="text" maxlength="1" id="3E"></td>
+                    <td><input type="text" maxlength="1" id="3F"></td>
+                    <td><input type="text" maxlength="1" id="3G"></td>
+                    <td><input type="text" maxlength="1" id="3H"></td>
+                    <td><input type="text" maxlength="1" id="3I"></td>
+                    <td><input type="text" maxlength="1" id="3J"></td>
+                    <td><input type="text" maxlength="1" id="3K"></td>
+                    <td>
+                        <button id="botao-pergunta10" type="button">10&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="3M"></td>
+                    <td><input type="text" maxlength="1" id="3N"></td>
+                    <td><input type="text" maxlength="1" id="3O"></td>
+                    <td><input type="text" maxlength="1" id="3P"></td>
+                    <td><input type="text" maxlength="1" id="3Q"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                </tr>
+                <!-- 4ª LINHA -->
+                <tr>
+                    <td><input type="text" maxlength="1" id="4A"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td><input type="text" maxlength="1" id="4F"></td>
+                    <td><input type="text" maxlength="1" id="4G"></td>
+                    <td><input type="text" maxlength="1" id="4H"></td>
+                    <td><input type="text" maxlength="1" id="4I"></td>
+                    <td><input type="text" maxlength="1" id="4J"></td>
+                    <td><input type="text" maxlength="1" id="4K"></td>
+                    <td>
+                        <button id="botao-pergunta11" type="button">&#8882;11</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="4M"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td><input type="text" maxlength="1" id="4O"></td>
+                    <td>
+                        <button id="botao-pergunta12" type="button">12&#8710;</button>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta13" type="button">13&#8711;</button>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                </tr>
+                <!-- 5ª LINHA -->
+                <tr>
+                    <td><input type="text" maxlength="1" id="5A"></td>
+                    <td>
+                        <button id="botao-pergunta14" type="button">14&#8711;</button>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta15" type="button">15&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="5D"></td>
+                    <td><input type="text" maxlength="1" id="5E"></td>
+                    <td><input type="text" maxlength="1" id="5F"></td>
+                    <td><input type="text" maxlength="1" id="5G"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td><input type="text" maxlength="1" id="5I"></td>
+                    <td><input type="text" maxlength="1" id="5J"></td>
+                    <td><input type="text" maxlength="1" id="5K"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td><input type="text" maxlength="1" id="5M"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td><input type="text" maxlength="1" id="5O"></td>
+                    <td><input type="text" maxlength="1" id="5P"></td>
+                    <td><input type="text" maxlength="1" id="5Q"></td>
+                    <td>
+                        <button id="botao-pergunta16" type="button">16&#8711;</button>
+                    </td>
+                </tr>
+                <!-- 6ª LINHA -->
+                <tr>
+                    <td><input type="text" maxlength="1" id="6A"></td>
+                    <td><input type="text" maxlength="1" id="6B"></td>
+                    <td><input type="text" maxlength="1" id="6C"></td>
+                    <td>
+                        <button id="botao-pergunta17" type="button">17&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="6E"></td>
+                    <td><input type="text" maxlength="1" id="6F"></td>
+                    <td><input type="text" maxlength="1" id="6G"></td>
+                    <td><input type="text" maxlength="1" id="6H"></td>
+                    <td><input type="text" maxlength="1" id="6I"></td>
+                    <td><input type="text" maxlength="1" id="6J"></td>
+                    <td><input type="text" maxlength="1" id="6K"></td>
+                    <td><input type="text" maxlength="1" id="6L"></td>
+                    <td><input type="text" maxlength="1" id="6M"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td><input type="text" maxlength="1" id="6O"></td>
+                    <td><input type="text" maxlength="1" id="6P"></td>
+                    <td><input type="text" maxlength="1" id="6Q"></td>
+                    <td><input type="text" maxlength="1" id="6R"></td>
+                </tr>
+                <!-- 7ª LINHA -->
+                <tr>
+                    <td><input type="text" maxlength="1" id="7A"></td>
+                    <td><input type="text" maxlength="1" id="7B"></td>
+                    <td><input type="text" maxlength="1" id="7C"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta18" type="button">18&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="7G"></td>
+                    <td><input type="text" maxlength="1" id="7H"></td>
+                    <td><input type="text" maxlength="1" id="7I"></td>
+                    <td><input type="text" maxlength="1" id="7J"></td>
+                    <td><input type="text" maxlength="1" id="7K"></td>
+                    <td><input type="text" maxlength="1" id="7L"></td>
+                    <td><input type="text" maxlength="1" id="7M"></td>
+                    <td><input type="text" maxlength="1" id="7N"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td><input type="text" maxlength="1" id="7P"></td>
+                    <td><input type="text" maxlength="1" id="7Q"></td>
+                    <td><input type="text" maxlength="1" id="7R"></td>
+                </tr>
+                <!-- 8ª LINHA -->
+                <tr>
+                    <td><input type="text" maxlength="1" id="8A"></td>
+                    <td><input type="text" maxlength="1" id="8B"></td>
+                    <td><input type="text" maxlength="1" id="8C"></td>
+                    <td>
+                        <button id="botao-pergunta19" type="button">19&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="8E"></td>
+                    <td><input type="text" maxlength="1" id="8F"></td>
+                    <td><input type="text" maxlength="1" id="8G"></td>
+                    <td><input type="text" maxlength="1" id="8H"></td>
+                    <td><input type="text" maxlength="1" id="8I"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta20" type="button">20&#8710;</button>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta21" type="button">21&#8711;</button>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta22" type="button">22&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="8P"></td>
+                    <td><input type="text" maxlength="1" id="8Q"></td>
+                    <td><input type="text" maxlength="1" id="8R"></td>
+                </tr>
+                <!-- 9ª LINHA -->
+                <tr>
+                    <td>
+                        <button id="botao-pergunta23" type="button">23&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="9B"></td>
+                    <td><input type="text" maxlength="1" id="9C"></td>
+                    <td><input type="text" maxlength="1" id="9D"></td>
+                    <td><input type="text" maxlength="1" id="9E"></td>
+                    <td><input type="text" maxlength="1" id="9F"></td>
+                    <td><input type="text" maxlength="1" id="9G"></td>
+                    <td><input type="text" maxlength="1" id="9H"></td>
+                    <td><input type="text" maxlength="1" id="9I"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta24" type="button">24&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="9M"></td>
+                    <td><input type="text" maxlength="1" id="9N"></td>
+                    <td><input type="text" maxlength="1" id="9O"></td>
+                    <td><input type="text" maxlength="1" id="9P"></td>
+                    <td><input type="text" maxlength="1" id="9Q"></td>
+                    <td><input type="text" maxlength="1" id="9R"></td>
+                </tr>
+                <!-- 10ª LINHA -->
+                <tr>
+                    <td><input type="text" maxlength="1" id="10A"></td>
+                    <td><input type="text" maxlength="1" id="10B"></td>
+                    <td><input type="text" maxlength="1" id="10C"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta25" type="button">25&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="10F"></td>
+                    <td><input type="text" maxlength="1" id="10G"></td>
+                    <td><input type="text" maxlength="1" id="10H"></td>
+                    <td><input type="text" maxlength="1" id="10I"></td>
+                    <td><input type="text" maxlength="1" id="10J"></td>
+                    <td><input type="text" maxlength="1" id="10K"></td>
+                    <td><input type="text" maxlength="1" id="10L"></td>
+                    <td><input type="text" maxlength="1" id="10M"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td><input type="text" maxlength="1" id="10P"></td>
+                    <td><input type="text" maxlength="1" id="10Q"></td>
+                    <td><input type="text" maxlength="1" id="10R"></td>
+                </tr>
+                <!-- 11ª LINHA -->
+                <tr>
+                    <td><input type="text" maxlength="1" id="11A"></td>
+                    <td><input type="text" maxlength="1" id="11B"></td>
+                    <td><input type="text" maxlength="1" id="11C"></td>
+                    <td><input type="text" maxlength="1" id="11D"></td>
+                    <td><input type="text" maxlength="1" id="11E"></td>
+                    <td><input type="text" maxlength="1" id="11F"></td>
+                    <td><input type="text" maxlength="1" id="11G"></td>
+                    <td><input type="text" maxlength="1" id="11H"></td>
+                    <td><input type="text" maxlength="1" id="11I"></td>
+                    <td>
+                        <button id="botao-pergunta26" type="button">&#8882;26</button>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td><input type="text" maxlength="1" id="11M"></td>
+                    <td>
+                        <button id="botao-pergunta27" type="button">27&#8711;</button>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td><input type="text" maxlength="1" id="11P"></td>
+                    <td><input type="text" maxlength="1" id="11Q"></td>
+                    <td><input type="text" maxlength="1" id="11R"></td>
+                </tr>
+                <!-- 12ª LINHA -->
+                <tr>
+                    <td><input type="text" maxlength="1" id="12A"></td>
+                    <td><input type="text" maxlength="1" id="12B"></td>
+                    <td><input type="text" maxlength="1" id="12C"></td>
+                    <td>
+                        <button id="botao-pergunta28" type="button">28&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="12E"></td>
+                    <td><input type="text" maxlength="1" id="12F"></td>
+                    <td><input type="text" maxlength="1" id="12G"></td>
+                    <td><input type="text" maxlength="1" id="12H"></td>
+                    <td><input type="text" maxlength="1" id="12I"></td>
+                    <td><input type="text" maxlength="1" id="12J"></td>
+                    <td><input type="text" maxlength="1" id="12K"></td>
+                    <td><input type="text" maxlength="1" id="12L"></td>
+                    <td><input type="text" maxlength="1" id="12M"></td>
+                    <td><input type="text" maxlength="1" id="12N"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta29" type="button">29&#8710;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="12Q"></td>
+                    <td><input type="text" maxlength="1" id="12R"></td>
+                </tr>
+                <!-- 13ª LINHA -->
+                <tr>
+                    <td><input type="text" maxlength="1" id="13A"></td>
+                    <td>
+                        <button id="botao-pergunta30" type="button">30&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="13C"></td>
+                    <td><input type="text" maxlength="1" id="13D"></td>
+                    <td><input type="text" maxlength="1" id="13E"></td>
+                    <td><input type="text" maxlength="1" id="13F"></td>
+                    <td><input type="text" maxlength="1" id="13G"></td>
+                    <td>
+                        <button id="botao-pergunta31" type="button">31&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="13I"></td>
+                    <td><input type="text" maxlength="1" id="13J"></td>
+                    <td><input type="text" maxlength="1" id="13K"></td>
+                    <td><input type="text" maxlength="1" id="13L"></td>
+                    <td><input type="text" maxlength="1" id="13M"></td>
+                    <td><input type="text" maxlength="1" id="13N"></td>
+                    <td><input type="text" maxlength="1" id="13O"></td>
+                    <td>
+                        <button id="botao-pergunta32" type="button">32&#8711;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="13Q"></td>
+                    <td><input type="text" maxlength="1" id="13R"></td>
+                </tr>
+                <!-- 14ª LINHA -->
+                <tr>
+                    <td><input type="text" maxlength="1" id="14A"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta33" type="button">33&#8710;</button>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta34" type="button">34&#8711;</button> <!-- SETA PARA BAIXO -->
+                    </td>
+                    <td>
+                        <button id="botao-pergunta35" type="button">35&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="14F"></td>
+                    <td><input type="text" maxlength="1" id="14G"></td>
+                    <td><input type="text" maxlength="1" id="14H"></td>
+                    <td><input type="text" maxlength="1" id="14I"></td>
+                    <td><input type="text" maxlength="1" id="14J"></td>
+                    <td><input type="text" maxlength="1" id="14K"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td><input type="text" maxlength="1" id="14M"></td>
+                    <td><input type="text" maxlength="1" id="14N"></td>
+                    <td><input type="text" maxlength="1" id="14O"></td>
+                    <td><input type="text" maxlength="1" id="14P"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                </tr>
+                <!-- 15ª LINHA -->
+                <tr>
+                    <td>
+                        <button id="botao-pergunta36" type="button">36&#8710;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="15B"></td>
+                    <td><input type="text" maxlength="1" id="15C"></td>
+                    <td><input type="text" maxlength="1" id="15D"></td>
+                    <td><input type="text" maxlength="1" id="15E"></td>
+                    <td><input type="text" maxlength="1" id="15F"></td>
+                    <td>
+                        <button id="botao-pergunta37" type="button">&#8882;37</button>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta38" type="button">38&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="15K"></td>
+                    <td><input type="text" maxlength="1" id="15L"></td>
+                    <td><input type="text" maxlength="1" id="15M"></td>
+                    <td><input type="text" maxlength="1" id="15N"></td>
+                    <td><input type="text" maxlength="1" id="15O"></td>
+                    <td><input type="text" maxlength="1" id="15P"></td>
+                    <td><input type="text" maxlength="1" id="15Q"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                </tr>
+                <!-- 16ª LINHA -->
+                <tr>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td><input type="text" maxlength="1" id="16C"></td>
+                    <td><input type="text" maxlength="1" id="16D"></td>
+                    <td><input type="text" maxlength="1" id="16E"></td>
+                    <td><input type="text" maxlength="1" id="16F"></td>
+                    <td><input type="text" maxlength="1" id="16G"></td>
+                    <td><input type="text" maxlength="1" id="16H"></td>
+                    <td><input type="text" maxlength="1" id="16I"></td>
+                    <td><input type="text" maxlength="1" id="16J"></td>
+                    <td>
+                        <button id="botao-pergunta39" type="button">&#8882;39</button>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td><input type="text" maxlength="1" id="16M"></td>
+                    <td>
+                        <button id="botao-pergunta40" type="button">40&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="16O"></td>
+                    <td><input type="text" maxlength="1" id="16P"></td>
+                    <td><input type="text" maxlength="1" id="16Q"></td>
+                    <td><input type="text" maxlength="1" id="16R"></td>
+                </tr>
+                <!-- 17ª LINHA -->
+                <tr>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta41" type="button">41&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="17C"></td>
+                    <td><input type="text" maxlength="1" id="17D"></td>
+                    <td><input type="text" maxlength="1" id="17E"></td>
+                    <td><input type="text" maxlength="1" id="17F"></td>
+                    <td><input type="text" maxlength="1" id="17G"></td>
+                    <td><input type="text" maxlength="1" id="17H"></td>
+                    <td><input type="text" maxlength="1" id="17I"></td>
+                    <td><input type="text" maxlength="1" id="17J"></td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta42" type="button">42&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="17N"></td>
+                    <td><input type="text" maxlength="1" id="17O"></td>
+                    <td><input type="text" maxlength="1" id="17P"></td>
+                    <td><input type="text" maxlength="1" id="17Q"></td>
+                    <td><input type="text" maxlength="1" id="17R"></td>
+                </tr>
+                <!-- 18ª LINHA -->
+                <tr>
+                    <td>
+                        <button id="botao-pergunta43" type="button">43&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="18B"></td>
+                    <td><input type="text" maxlength="1" id="18C"></td>
+                    <td><input type="text" maxlength="1" id="18D"></td>
+                    <td><input type="text" maxlength="1" id="18E"></td>
+                    <td>
+                        <button id="botao-pergunta44" type="button">44&#8710;</button>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta45" type="button">45&#8883;</button>
+                    </td>
+                    <td><input type="text" maxlength="1" id="18H"></td>
+                    <td><input type="text" maxlength="1" id="18I"></td>
+                    <td><input type="text" maxlength="1" id="18J"></td>
+                    <td><input type="text" maxlength="1" id="18K"></td>
+                    <td><input type="text" maxlength="1" id="18L"></td>
+                    <td><input type="text" maxlength="1" id="18M"></td>
+                    <td><input type="text" maxlength="1" id="18N"></td>
+                    <td>
+                        <button id="botao-pergunta46" type="button">46&#8710;</button>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                    <td>
+                        <button id="botao-pergunta47" type="button">47&#8710;</button>
+                    </td>
+                    <td>
+                        <div class="Casanula"></div>
+                    </td>
+                </tr>
+            </table>
+            <button id="dica" class="botao-jogo">DICA</button>
+            <div id="orientacoes">
+                <h3>Orientações:</h3>
+                <div id="texto">
+                    * Escolha e clique em uma pergunta indicada por um número e sua direção de preenchimento das letras.<br>
+                    * O enunciado da pergunta surgirá no quadro acima.<br>
+                    * Digite cada letra da palavra da resposta.<br>
+                    * Caso você não saiba a resposta de determinada pergunta,
+                    você no botão "DICA" e aparecerá algumas letras da resposta. São 09 (nove) oportunidades de dica.<br>
+                    * Escolha outro número (pergunta) e repita o processo.<br>
+                    * Desconsidere acentos ao preencher as letras em seus espaços.
+                </div>
+                <div id="Marcatempo">
+                    <h5>TEMPO:</h5>
+                    <h2 id="cronometro">00:00</h2>
+                </div>
+                <div id="Marcapontuacao">
+                    <h5>PONTOS:</h5>
+                    <h2 id="indicador"></h2>
+                </div>
+            </div>
+        </div>
+        <div id="jogo-finalizado">
+            <img src="imagens\gameover.png" id="game-over">
+            <!-- <label for="exampleInputEmail1" class="form-label" id="label1">Escreva aqui seu nome:</label>
+            <input type="text" class="form-control" id="nome-jogador"> -->
+            <!-- <label for="exampleInputEmail1" class="form-label" id="label2">Sua pontuação neste jogo:</label> -->
+            Sua pontuação:            .
+            <input type="text" class="form-control" id="pontuacao-final" readonly>
+            <!-- <button type="submit" class="btn btn-primary" id="envia-pontuacao">Enviar</button> -->
+        </div>
+    </div>
+
+    <button id="botao-responde-tudo">RespondeTudo</button>
+
+    <script src="js/casa.js"></script>
+    <script src="js/palavra.js"></script>
+    <script src="js/Score.js"></script>
+    <script src="js/PalavraBuilder.js"></script>
+    <script src="js/cronometro.js"></script>
+    <script src="js/JuizDoJogo.js"></script>
+    <script src="js/jogoPalavraCruzada.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

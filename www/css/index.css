@@ -1,0 +1,196 @@
+body{
+    background-image: url('/imagens/Fundo.jpg');
+    background-size: contain;
+}
+.container{
+    background-color: rgb(23, 23, 23);
+    width: 720px;
+    margin: auto;
+    padding-bottom: 1%;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(23, 23, 23);
+    padding: 2%;
+    font-size: 2.5rem;
+    font-family: Georgia;
+    text-align: center;
+    color: rgb(182, 114, 13);
+}
+.boxpergunta{
+    background-color: rgb(194, 155, 98);
+    border: 2px solid rgb(182, 114, 13);
+    margin: 2%;
+    padding: 1%;
+}
+table{
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+}
+input{
+    text-transform:uppercase;
+    width: 35px;
+    height: 35px;
+    font-family: 'Trebuchet MS', Arial;
+    font-size: large;
+    text-align: center;
+    box-sizing: border-box;
+}
+button{
+    width: 35px;
+    height: 35px;
+    box-sizing: border-box;
+    background-color: rgb(182, 114, 13);
+    border:rgb(182, 114, 13) solid 1px;
+}
+#botao-responde-tudo{
+    width: 150px;
+    height: 50px;
+    box-sizing: border-box;
+    margin: 2% 40%;
+    font-size: 1em;
+    text-align: center;
+    opacity: 0;
+}
+.Casanula{
+    width: 35px;
+    height: 35px;
+}
+.botao-jogo{  /*BOTÃO DICA*/
+    background-color: rgb(182, 114, 13);
+    margin: 3% 5%;
+    width: 90%;
+    height: 60px;
+    border-radius: 8px;
+    border: outset 4px rgb(194, 155, 98);
+    font-size: 30px;
+    font-family: Impact, Verdana Bold, 'Arial Narrow', Arial;
+    text-align: center;
+}
+.botao-jogo:hover {
+    transform: scale(110%);
+    background-color: rgb(255, 215, 114);
+    border:  outset 6px rgb(252, 237, 177);
+    cursor: pointer;
+}
+.botao-jogo:disabled{
+    background-color: rgb(202, 186, 163);
+    opacity: 50%;  
+}
+#orientacoes{
+    background-color: rgb(194, 155, 98);
+    border: 4px solid rgb(182, 114, 13);
+    display: grid;
+    margin: 2%;
+    padding: 1% 3%;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 0.7fr 2fr 2fr;
+}
+/* Título das observações */
+h3{ 
+    grid-area: 1 / 1 / span 1/ span 2;
+    font-size: 25px;
+    font-family: 'Palatino Linotype', 'Arial Narrow', Arial;
+    margin: 0;
+}
+/* Descrição Tempo: e Pontos:*/
+h5{
+    font-size: 12px;
+    font-family: 'Palatino Linotype', Arial;
+    line-height: 1em;
+    margin: 0;
+    padding-left: 5%;
+}
+#texto{
+    display: grid;
+    grid-area: 2 / 1 / span 2 / span 1;
+    padding-top: 2%;
+    font-size: 15px;
+    font-family: 'Palatino Linotype', Arial;
+    text-justify: inter-word;
+}
+#Marcatempo{
+    background-color: rgb(182, 114, 13);
+    width: 90px;
+    height: 60px;
+    display: grid;
+    grid-area: 2 / 2 / span 1/ span 1;
+    border-radius: 8px;
+    border: solid 4px black;
+    margin: 5% auto;
+    padding-top: 5%;
+}
+#cronometro{
+    font-size: 30px;
+    font-family: Impact, Verdana Bold, 'Arial Narrow', Arial;
+    text-align: center;
+    line-height: 0;
+}
+#Marcapontuacao{
+    background-color: rgb(182, 114, 13);
+    width: 90px;
+    height: 60px;
+    display: grid;
+    grid-area: 3 / 2 / span 1/ span 1;
+    border-radius: 8px;
+    border: solid 4px black;
+    margin: 3% auto;
+    padding-top: 5%;
+}
+#indicador{
+    font-size: 30px;
+    font-family: Impact, Verdana Bold, 'Arial Narrow', Arial;
+    text-align: center;
+    line-height: 0;
+}
+.palavra-selecionada {
+    background-color: rgb(194, 155, 98);
+}
+.casa-selecionada {
+    background-color: rgb(182, 114, 13);
+}
+.palavra-certa {
+    background-color: rgb(43, 43, 43);
+    color: rgb(182,114,13);
+    border: black;
+}
+.palavra-errada{
+    background-color: rgb(161, 10, 0);
+}
+#jogo-finalizado{
+    background-color: rgb(194, 155, 98);
+    border: 4px solid rgb(182, 114, 13);
+    display: none;
+}
+#game-over{
+    margin: auto;
+    width: 100%;
+}
+#nome-jogador{
+    background-color: rgb(182,112,12);
+    border: 4px solid black;
+    width: 70%;
+    padding: 3%;
+    font-size: 20px;
+    font-family: Verdana Bold, 'Arial Narrow', Arial;
+    text-align: center;
+}
+#pontuacao-final{
+    background-color: rgb(182,112,12);
+    border: 4px solid black;
+    width: 120px;
+    padding: 3%;
+    font-size: 30px;
+    font-family: Impact, Verdana Bold, 'Arial Narrow', Arial;
+    text-align: center;
+}
+#envia-pontuacao{
+    background-color: rgb(182,112,12);
+    border: 4px solid black;
+    width: 20%;
+    padding: 1%;
+    font-size: 20px;
+    font-family: Impact, Verdana Bold, 'Arial Narrow', Arial;
+    text-align: center;
+}
